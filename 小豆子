@@ -1,0 +1,12 @@
+＃ -  *  - 编码：cp936  -  *  -
+导入 linecache
+o = open（'单词表.csv '）＃
+o.seek（0）
+r = o.readlines（）
+s1 = str（输入（'输入要定位的单词信息：'））
+a = 0
+count = 0
+对于我在 r：＃按和值组合查找
+    如果 i.find（s1）> = 0：       
+        print（i）＃显示定位行
+打印（'总计：％d '％计数）
